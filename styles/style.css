@@ -541,6 +541,9 @@ responsive
         max-width: 960px;
         width: unset;
     }
+    #hero-area .container .left-side h1{
+        width: 100%;
+    }
     /* Players area */
     #players {
         margin-top: 50px;
