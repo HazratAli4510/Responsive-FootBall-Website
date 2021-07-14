@@ -295,6 +295,10 @@ Highlight
     -ms-border-radius: 24px;
     -o-border-radius: 24px;
 }
+#Club-Souvenirs .container > button{
+    margin: 0 auto;
+    display: block;
+}
 #Club-Souvenirs .container .products{
     margin: 2rem 0;
     column-gap: 1rem;
@@ -344,7 +348,50 @@ Highlight
 
 
 
-
+/* signup section */
+#signup{
+    padding: 50px 0;
+    background-image: url(../images/overly-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#signup .container h1{
+    font-size: 50px;
+    text-align: center;
+    color: white;
+}
+#signup .container span{
+    color: white;
+    text-align: center;
+    display: block;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+#signup .container form{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin: 2rem 0;
+}
+#signup .container form input{
+    padding: 0.5rem 10%;
+    outline: none;
+}
+#signup .container form input[placeholder]{
+    color:var(--btn-bg);
+    font-size: 16px;
+    font-weight: 700;
+}
+#signup .container form button{
+    border: none;
+    background-color:var(--btn-bg);
+    color:white;
+    padding:0 2rem;
+    cursor: pointer;
+    font-size: 20px;
+    text-transform: uppercase;
+}
 
 
 /*--------------
@@ -450,6 +497,20 @@ responsive
     #highlight .container .left-side p {
         width: 100%;
     }
+
+
+    /* sign Up */
+    #signup .container h1 {
+        font-size: 41px;
+    }
+    #signup .container{
+        padding: 3%;
+    }
+    #signup .container form input{
+        width: 100%;
+    }
+
+
 
     /* Footer */
     footer .container img {
