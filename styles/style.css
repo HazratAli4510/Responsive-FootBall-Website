@@ -304,3 +304,64 @@ responsive
       max-width: 1152px;
     }
   }
+
+
+
+  /*----------- for Mobile Devices------------- */
+  @media (max-width:576px) {
+
+    nav{
+        display: none;
+    }
+
+      /* Hero Area */
+      #hero-area{
+          padding-bottom: 2rem;
+      }
+      #hero-area .container {
+          flex-direction: column;
+      }
+      #hero-area .container .left-side h1{
+        font-size: 36px;  
+        line-height:50px ;
+      }
+      #hero-area .container .right-side img{
+        padding-top: 4rem;
+    }
+
+
+    /* Players area */
+    #players {
+        margin-top: 50px;
+    }
+    #players .players{
+        grid-template-columns: 1fr;
+    }
+
+    /* Highlight Section */
+    #highlight{
+        margin-top:50px;
+        margin-bottom:0px;
+    }
+    #highlight .container{
+        flex-direction: column;
+        padding: 16px;
+    }
+    #highlight .container .left-side h1{
+        font-size: 30px;
+        line-height: 40px;
+    }
+    #highlight .container .left-side p {
+        width: 100%;
+    }
+
+    /* Footer */
+    footer .container img{
+        width: 80%;
+    }
+      
+      
+    
+
+
+}
