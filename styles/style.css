@@ -245,8 +245,36 @@ Highlight
 }
 
 
-
-
+/*--------------
+ footer
+ -------------- */
+ footer .container{
+     flex-direction: column;
+ }
+ footer .container img{
+     width: 480px;
+ }
+ footer .container .social-icons i{
+     width: 32px;
+     height: 30px;
+     font-size: 17px;
+     color:#252c42;
+     background-color: #969BAB;
+     border-radius:50%;
+     -webkit-border-radius:50%;
+     -moz-border-radius:50%;
+     -ms-border-radius:50%;
+     -o-border-radius:50%;
+     padding-top: 7px;
+     padding-left: 8px;
+     margin-right: 14px;
+     cursor: pointer;
+}
+footer .container .copyright-text{
+    margin: 1rem 0;
+    font-weight: 400;
+    font-size: 18px;
+}
 
 /*-------------- 
 responsive
