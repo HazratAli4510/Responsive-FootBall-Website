@@ -272,6 +272,81 @@ Highlight
 }
 
 
+/* Club-Souvenirs */
+#Club-Souvenirs{
+    padding: 50px 0;
+    background-image: url(../images/Pattern-background-image.png);
+    background-size: cover; 
+}
+#Club-Souvenirs .container > h1{
+    text-align: center;
+    font-size: 3em;
+    font-weight: 500;
+}
+#Club-Souvenirs .container > span{
+    display: block;
+    width: 60px;
+    height: 5px;
+    background-color: var(--primary);
+    margin: 0 auto;
+    border-radius: 24px;
+    -webkit-border-radius: 24px;
+    -moz-border-radius: 24px;
+    -ms-border-radius: 24px;
+    -o-border-radius: 24px;
+}
+#Club-Souvenirs .container .products{
+    margin: 2rem 0;
+    column-gap: 1rem;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+}
+#Club-Souvenirs .container .products .product{
+    width: 294px;
+    cursor: pointer;
+}
+#Club-Souvenirs .container .products .product .image{
+    overflow: hidden;
+    width: 294px;
+    height: 294px;
+}
+#Club-Souvenirs .container .products .product img{
+    transition: transform 0.5s ease,filter 0.3s ease;
+    -webkit-transition: transform 0.5s ease,filter 0.3s ease;
+    -moz-transition: transform 0.5s ease,filter 0.3s ease;
+    -ms-transition: transform 0.5s ease,filter 0.3s ease;
+    -o-transition: transform 0.5s ease,filter 0.3s ease;
+}
+#Club-Souvenirs .container .products .product  button{
+    background: none;
+    border: none;
+    background-color: var(--primary);
+    color: white;
+    padding: 7px 15px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+#Club-Souvenirs .container .products .product:hover img{
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+#Club-Souvenirs .container .products .product .rating i{
+    color: var(--primary);
+    margin: 10px 0;
+}
+#Club-Souvenirs .container .products .product .title h2{
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
 /*--------------
  footer
  -------------- */
@@ -309,9 +384,7 @@ footer .container .copyright-text {
 /*-------------- 
 responsive
 ----------------- */
-/*------------------
- Only for container
- ------------------- */
+
 
 
 
@@ -384,6 +457,9 @@ responsive
     }
 }
 
+
+
+/* for Other screens */
 @media (max-width: 1180px){
     .container{
         width: unset;
@@ -442,5 +518,8 @@ responsive
 
     #highlight .container .left-side p {
         width: 100%;
+    }
+    #Club-Souvenirs .container > h1{
+        font-size:2em;
     }
 }}
