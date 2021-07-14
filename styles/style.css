@@ -109,7 +109,11 @@ Utility classes
     text-decoration: none;
     margin-right: 2rem;
 }
-
+#Main-Menu  .menu-icon i{
+    color: white;
+    font-size: 1.8em;
+    cursor: pointer;
+}
 
 
 /*----------------
@@ -417,7 +421,7 @@ footer .container .social-icons i {
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
     padding-top: 7px;
-    padding-left: 8px;
+    padding-left: 9px;
     margin-right: 14px;
     cursor: pointer;
 }
@@ -441,9 +445,8 @@ responsive
     .container{
         width: 100%;
     }
-
-    nav {
-        display: none;
+    #Main-Menu{
+        padding: 1rem;
     }
 
     /* Hero Area */
