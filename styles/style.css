@@ -20,7 +20,7 @@
 Utility classes 
 ----------------------*/
 .container {
-    width: 100%;
+    width: 1150px;
     margin: 0 auto;
 }
 
@@ -312,34 +312,15 @@ responsive
 /*------------------
  Only for container
  ------------------- */
-@media (min-width:576px) {
-    .container {
-        max-width: 540px;
-    }
-}
 
-@media (min-width: 768px) {
-    .container {
-        max-width: 720px;
-    }
-}
-
-@media (min-width: 992px) {
-    .container {
-        max-width: 960px;
-    }
-}
-
-@media (min-width: 1200px) {
-    .container {
-        max-width: 1152px;
-    }
-}
 
 
 
 /*----------- for Mobile Devices------------- */
 @media (max-width:576px) {
+    .container{
+        width: 100%;
+    }
 
     nav {
         display: none;
@@ -402,3 +383,64 @@ responsive
         width: 80%;
     }
 }
+
+@media (max-width: 1180px){
+    .container{
+        width: unset;
+    }
+    #players .players{
+        margin: 0;
+        column-gap: unset;
+    }
+    #highlight .container{
+        padding: 2%;
+    }
+}
+@media (max-width: 992px) {
+    .container {
+        max-width: 960px;
+        width: unset;
+    }
+    /* Players area */
+    #players {
+        margin-top: 50px;
+    }
+
+    #players .players {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        display: flex;
+        margin: 0;
+        column-gap: 30px;
+    }
+    #highlight{
+        margin: 0px;
+    }
+    #highlight .container {
+        padding: 50px;
+    }
+    #Main-Menu .menus a{
+      display: none;
+
+}
+@media (max-width: 768px) {
+    #highlight {
+        margin-top: 50px;
+        margin-bottom: 0px;
+    }
+
+    #highlight .container {
+        flex-direction: column;
+        padding: 16px;
+    }
+
+    #highlight .container .left-side h1 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    #highlight .container .left-side p {
+        width: 100%;
+    }
+}}
